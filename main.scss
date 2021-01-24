@@ -203,7 +203,9 @@ html {
     // }
     &__testimony {
       color: inherit;
-      margin-top: 30px;
+      margin: 20px;
+      font-size: 14.2px;
+      line-height: 1.5;
     }
     &__profile {
       display: flex;
@@ -247,7 +249,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     width: 750px;
-    height: 230px;
+    height: 250px;
     background: var(--intro-email-bg);
     border-radius: 10px;
     box-shadow: 5px 5px 10px var(--footer-bg);
@@ -264,6 +266,7 @@ html {
   &-form {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
     &__input,
     &__btn {
       border-radius: 30px;
@@ -330,6 +333,9 @@ html {
         padding-bottom: 10px;
       }
     }
+  }
+  .attribution {
+    margin: 25px;
   }
 }
 
@@ -437,7 +443,7 @@ html {
     &-card {
       &__testimony {
         font-size: 12px;
-        width: 270px;
+        width: 265px;
         line-height: 20px;
         margin-bottom: 10px;
       }
@@ -449,15 +455,53 @@ html {
   // sign up
   .signup {
     &-container {
-      width: 325px;
+      width: 320px;
       height: 350px;
     }
     &-heading {
       font-size: 18px;
     }
     &-text {
+      font-size: 11.8px;
+      line-height: 1.5;
     }
     &-form {
+      flex-direction: column;
+      align-items: center;
+      &__input,
+      &__btn {
+        width: 250px;
+      }
+    }
+  }
+  // footer
+  .footer {
+    &-container {
+      font-size: 16.5px;
+      font-weight: lighter;
+    }
+
+    &-logo {
+      margin: 40px;
+      width: 155px;
+      height: 45px;
+    }
+    &-details {
+      flex-direction: column;
+      margin: 0 10px 20px 20px;
+      &__address,
+      &__contact {
+        padding: 10px;
+      }
+      &__contact {
+        .item {
+          padding: 10px;
+        }
+      }
+      &__list1,
+      &__list2 {
+        padding: 25px 30px 25px 10px;
+      }
     }
   }
 }

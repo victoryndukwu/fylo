@@ -145,6 +145,7 @@ html {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
+  /* -ms-grid-columns: repeat(2, 1fr); */
       grid-template-columns: repeat(2, 1fr);
   gap: 90px 150px;
   width: 900px;
@@ -242,7 +243,9 @@ html {
 
 .testimonial-card__testimony {
   color: inherit;
-  margin-top: 30px;
+  margin: 20px;
+  font-size: 14.2px;
+  line-height: 1.5;
 }
 
 .testimonial-card__profile {
@@ -308,7 +311,7 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 750px;
-  height: 230px;
+  height: 250px;
   background: var(--intro-email-bg);
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 10px var(--footer-bg);
@@ -333,6 +336,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10px;
 }
 
 .signup-form__input, .signup-form__btn {
@@ -422,6 +426,10 @@ html {
 .footer-details__list1 li, .footer-details__list2 li {
   list-style-type: none;
   padding-bottom: 10px;
+}
+
+.footer .attribution {
+  margin: 25px;
 }
 
 @media only screen and (max-width: 414px) {
@@ -521,7 +529,7 @@ html {
   }
   .testimonial-card__testimony {
     font-size: 12px;
-    width: 270px;
+    width: 265px;
     line-height: 20px;
     margin-bottom: 10px;
   }
@@ -529,11 +537,52 @@ html {
     margin-top: 10px;
   }
   .signup-container {
-    width: 325px;
+    width: 320px;
     height: 350px;
   }
   .signup-heading {
     font-size: 18px;
+  }
+  .signup-text {
+    font-size: 11.8px;
+    line-height: 1.5;
+  }
+  .signup-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .signup-form__input, .signup-form__btn {
+    width: 250px;
+  }
+  .footer-container {
+    font-size: 16.5px;
+    font-weight: lighter;
+  }
+  .footer-logo {
+    margin: 40px;
+    width: 155px;
+    height: 45px;
+  }
+  .footer-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 10px 20px 20px;
+  }
+  .footer-details__address, .footer-details__contact {
+    padding: 10px;
+  }
+  .footer-details__contact .item {
+    padding: 10px;
+  }
+  .footer-details__list1, .footer-details__list2 {
+    padding: 25px 30px 25px 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
